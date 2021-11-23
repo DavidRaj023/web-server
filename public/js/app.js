@@ -7,7 +7,7 @@ const searchElement = document.querySelector('input')
 
 weatherLocation.addEventListener('submit', (e) =>{
     e.preventDefault()
-    const url = 'http://localhost:3000/weather?address=' + searchElement.value
+    const url = '/weather?address=' + searchElement.value
     
     fetch(url).then((res) =>{
     res.json().then((data) => {
